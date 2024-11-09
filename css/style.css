@@ -50,3 +50,49 @@ nav {
   font-weight: bold;
 }
 /* end navbar */
+
+
+/* start main top header*/
+.header-main-top {
+  display: flex;
+}
+/* .welcome {
+} */
+.welcome-title {
+  font-weight: bold;
+  font-size: 7.4rem;
+  font-family: var(--fontRaleway);
+}
+.welcome-button {
+  padding: 1.2rem 5.2rem;
+  margin: 0 2.8rem;
+  border-radius: 20px;
+  position: relative;
+  bottom: 20px;
+  background: none;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.Description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 16rem;
+  
+}
+.Description>.wrapper p {
+    width: 36rem;
+    margin: 0 0 4rem 0;
+    line-height: 1.4;
+    color: #3e3c3c;
+}
+.Description>.wrapper a {
+    text-decoration: none;
+    color: #fff;
+    background: #6956e9;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+/* end main top header */
