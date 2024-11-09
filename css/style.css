@@ -15,11 +15,11 @@ body {
   margin: 0;
   font-size: 16px;
 }
-/* header{
-
-}  */
+header{
+  background-color: #F5F5F5;
+} 
 .continer {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 /* start navbar */
@@ -55,12 +55,13 @@ nav {
 /* start main top header*/
 .header-main-top {
   display: flex;
+  flex-wrap: wrap;
 }
 /* .welcome {
 } */
 .welcome-title {
   font-weight: bold;
-  font-size: 7.4rem;
+  font-size: 7.9rem;
   font-family: var(--fontRaleway);
 }
 .welcome-button {
@@ -96,3 +97,82 @@ nav {
     border-radius: 20px;
 }
 /* end main top header */
+
+/* start main bottom header */
+.classheader-main-bottom{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Products-header{
+  width: 50%;
+}
+.Products-header__tv{
+  width: 100%;
+  height: 18.4rem;
+  margin: 2rem 2rem 2rem 0;
+  border-radius: 1.6rem;
+  background-color: #A8C1BD;
+  padding-left: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Products-header__tv img{
+margin-top: 1rem;
+}
+/* .Products-header__tv-text{
+
+} */
+.Products-header__tv-text h2{
+  width: 13rem;
+}
+.wrapper-element-banner-Security-OurProduct{
+  display: flex;
+  width: 100%;
+}
+.Products-header__Security{
+  width:65%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-around;
+}
+.Products-header__Security-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.Products-header__Security-text img{
+  align-self: flex-start;
+}
+.Products-header__OurProduct{
+  width: 40%;
+  height: 18.4rem;
+  background-color: #121212;
+  color: #fff;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Products-header__OurProduct h2,.Products-header__OurProduct h3{
+  font-size: 3rem;
+  margin: 0;
+}
+.Products-header__Security,.Products-header__OurProduct{
+  border-radius: 1.6rem;
+}
+.Advertising-photo{
+  width: 45%;
+  height: 44rem;
+  background-color: #fff;
+  margin-left: 1rem;
+position: relative;
+}
+.Advertising-photo img{
+  position: absolute;
+  bottom: 0;
+}
+/* end main bottom header */
