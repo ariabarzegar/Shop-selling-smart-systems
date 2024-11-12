@@ -6,13 +6,14 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --fontRaleway: "Raleway", sans-serif;
 }
 body {
-  padding: 0;
-  margin: 0;
+
   font-size: 16px;
 }
 /* start header */
@@ -55,7 +56,7 @@ nav {
 
 
 /* start main top header*/
-.header-main-top {
+.header-content-top {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 3rem;
@@ -84,28 +85,28 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 0 0 13rem;
+  margin: 0 0 0 20rem;
   
 }
-.Description>.wrapper p {
+.Description p {
   width: 43rem;
   margin: 0 0 4rem 0;
   line-height: 1.4;
   color: #696969;
   font-size: 2rem;
 }
-.Description>.wrapper a {
+.Description a {
     text-decoration: none;
     color: #fff;
     background: #6956e9;
     padding: 1rem 2rem;
     border-radius: 20px;
+    width: 12rem;
 }
 /* end main top header */
 
-/* start main bottom header */
-.classheader-main-bottom{
+/* start content bottom header */
+.classheader-content-bottom{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -182,13 +183,17 @@ margin-top: 1rem;
   position: absolute;
   bottom: 0;
 }
-/* end main bottom header */
+/* end content bottom header */
+
 /* end header */
 
 /* start main */
+
+/* start content banner Latest */
 .latest_service {
   background-color: rgb(72, 72, 72);
   border-radius: 16px;
+  margin: 7rem 0;
 }
 .latest_service__title{
   color: #fff;
@@ -229,4 +234,39 @@ padding: 1.5rem 2rem;
   margin: 2rem 0;
   border-radius: 16px;
 }
+/* end content banner Latest */
+
+/* start banner Accessible */
+.banner-Accessible{
+  background-color: #F5F5F5;
+}
+.content-header__Accessible{
+  margin: 3rem auto;
+  width: 75rem;
+}
+.content-header__title{
+  font-size: 6rem;
+  line-height: 13rem;
+}
+.content-header__Description{
+  text-align: center;
+  color: #484848;
+}
+.wrapper-content-statistics{
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+}
+.Accessible__content{
+
+}
+.Accessible__content h3{
+  font-size: 5rem;
+  text-align: center;
+}
+.Accessible__content p{
+  font-size: 2rem;
+  text-align: center;
+}
+/* end banner Accessible */
+
 /* end main */
