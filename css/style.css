@@ -44,15 +44,20 @@ nav {
 }
 .nav-ul {
   display: flex;
+  gap: 5rem;
 }
 .nav-li {
   list-style: none;
-  margin-left: 5rem;
 }
 .nav-li > a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+.nav-li a:hover{
+  color: rgb(0 37 181);
+  font-size: 1.8rem;
+  transition: all 0.1s;
 }
 /* end navbar */
 
