@@ -23,6 +23,9 @@ header {
 .gray{
   background-color: #f5f5f5;
 }
+.bg-black-gray{
+  background-color: #484848;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -447,5 +450,30 @@ nav {
 }
 .Customers-bottom__box .Customers-bottom__box-dis{
   color: #585858;
+}
+.Introduction-technology{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem 30rem;
+}
+.Introduction-technology h3{
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+}
+.Introduction-technology p{
+  color: #fff;
+  text-align: center;
+}
+.Introduction-technology a{
+  text-decoration: none;
+  color: #fff;
+  background: #6956E9;
+  padding: 1.5rem 2rem;
+  border-radius: 8rem;
+  font-size: 2rem;
 }
 /* end main */
