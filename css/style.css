@@ -477,3 +477,58 @@ nav {
   font-size: 2rem;
 }
 /* end main */
+ /* start footer */
+ footer{
+ background: #070707;
+ color: #fff;
+ }
+
+.conect-me{
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+}
+.conect-me h4{
+  margin-bottom: 5rem;
+  font-size: 2.1rem;
+}
+.footer-link,.footer-conact,.footer-subscribe{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.content-conact{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-subscribe form{
+  border: 1px solid #fff;
+  height: 4.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.footer-subscribe form input{
+  background:none;
+  border: none;
+  height: 100%;
+  outline: none;
+}
+.footer-subscribe form button{
+  height: 100%;
+  width: 8rem;
+  background-color: #6956e9;
+  border-radius: 0 16px 16px 0;
+  border: none;
+  color: #fff;
+}
+.Social{
+  display: flex;
+  justify-content: space-around;
+}
+.Social a{
+  color: white;
+  text-decoration: none;
+}
+ /* end footer */
