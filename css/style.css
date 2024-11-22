@@ -27,20 +27,20 @@ header {
   background-color: #484848;
 }
 .container {
-  width: 80%;
+  max-width:1220px;
   margin: 0 auto;
 }
 /* start navbar */
-nav {
-  width: 100%;
-  height: 7rem;
+.wrapper-nav{
   border-bottom: 0.1rem solid rgb(36, 36, 36);
   border-top: 1px solid rgb(54, 54, 54);
   margin: 2.5rem 0 0 0;
+}
+nav {
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
 }
 .nav-logo {
   font-family: Arial, Helvetica, sans-serif;
@@ -61,6 +61,85 @@ nav {
   color: rgb(0 37 181);
   font-size: 1.8rem;
   transition: all 0.1s;
+}
+.box-mobile{
+  background-color: #6956E9;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.box-mobile span{
+  background-color: #fff;
+  width: 75%;
+  height: 0.1rem;
+  border-radius: 16px;
+  position: relative;
+}
+.box-mobile span::after{
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 16px;
+  display: block;
+  position: absolute;
+  top: 0.6rem;
+  transition: all 0.2ms ease-in;
+
+}
+.box-mobile span::before{
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 16px;
+  display: block;
+  position: absolute;
+  bottom: 0.6rem;
+}
+.ul-mobile{
+  background: #6956e9;
+  padding: 2rem;
+  line-height: 5rem;
+  width: 20rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  left: -200px;
+  transition: all 0.2s ease-in-out;
+
+}
+.ul-mobile .nav-li > a {
+  color: #fff;
+}
+.Social-mobile,
+.Social-mobile a{
+  color: #fff;
+  margin-top: 5rem;
+}
+.Social-mobile svg{
+  margin: 1rem;
+}
+.open-box-mobile span{
+  background: none;
+}
+.open-box-mobile span::before{
+  transform: rotate(45deg) translateY(3px) translateX(5px);
+  transition: all 0.2ms ease-in;
+}
+.open-box-mobile span::after{
+  transform: rotate(-45deg) translateY(-4px) translateX(5px);
+  transition: all 0.2ms ease-in;
+
+}
+.show-ul-mobile{
+  left: 0;
+  transition: all 0.2s ease-in-out;
 }
 /* end navbar */
 
@@ -124,9 +203,9 @@ nav {
   width: 60rem;
 }
 .Products-header__tv {
-  width: 60rem;
+  max-width: 60rem;
   height: 15.4rem;
-  margin: 6rem 2rem 2rem 0;
+  margin: 6rem 0 2rem;
   border-radius: 1.6rem;
   background-color: #a8c1bd;
   padding-left: 3rem;
@@ -246,6 +325,7 @@ nav {
 .photo-watch {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .photo-watch img {
   margin: 2rem 0;
@@ -532,3 +612,51 @@ nav {
   text-decoration: none;
 }
  /* end footer */
+
+@media (max-width:600px){
+  .nav-ul{
+    display: none;
+  }
+  .box-mobile{
+    display: flex;
+  }
+  .Description{
+    display: none;
+  }
+  .welcome-title{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .welcome-button{
+    padding: 1rem 5rem;
+    bottom: 0;
+  }
+  .Products-header__tv-img{
+    height: 15rem;
+    width: 15rem;
+  }
+  .Products-header__tv{
+    margin: 2rem 1rem ;
+    height: 10.8rem;
+  }
+  .Advertising-photo{
+    display: none;
+  }
+  .Products-header__Security-img{
+    min-width: 10rem;
+    height: 10rem;
+  }
+  .Products-header__Security-text{
+    font-size: 1rem;
+  }
+  .Products-header__Security,.Products-header__OurProduct{
+    height: 10rem;
+  }
+  .Products-header__OurProduct h3 , .Products-header__OurProduct h2{
+    font-size: 1.5rem;
+    }
+  .Products-header__tv-text h2{
+    width: 11rem;
+    font-size: 2rem;
+  }
+}
