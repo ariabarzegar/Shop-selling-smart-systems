@@ -351,13 +351,16 @@ nav {
   color: #484848;
 }
 .wrapper-content-statistics {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  display: flex;
+
 }
 .Accessible__content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 40%;
+  gap: 3rem;
+
 }
 .Accessible__content h3 {
   font-size: 5rem;
@@ -366,6 +369,20 @@ nav {
 .Accessible__content p {
   font-size: 2rem;
   text-align: center;
+}
+.Accessible__image-left{
+  background:url(../image/Image.png);
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+
+}
+.Accessible__image-right{
+  background: url("../image/Image (1).png");
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+
 }
 /* end banner Accessible */
 
@@ -378,6 +395,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .introduction-Product__title h3{
   font-size: 6.7rem;
@@ -459,6 +477,13 @@ nav {
 .How-work__title h3{
   font-size: 50px;
   margin: 20px;
+}
+.How-work__image{
+  background: url(../image/Image\ \(6\).png);
+  width: 50rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
 }
 .How-work__content{
   display: flex;
@@ -682,9 +707,72 @@ nav {
   .photo-watch img{
     height: 30rem;
   }
+  .Accessible__content h3{
+    font-size: 3rem;
+  }
+  .Accessible__content p{
+    font-size: 1.5rem;
+  }
+  .content-header__title{
+    font-size: 3rem;
+  }
+  .introduction-Products__wifi{
+    height: 15rem;
+    margin: 4rem 0 2rem 0;
+  }
+  .introduction-Product__title h3{
+    font-size: 4.7rem;
+  }
+  .right{
+    width: 30rem;
+    height: 6rem;
+  }
+  .tv, .Device, .Robot{
+    height: 15rem;
+  }
+  .tv svg, .Device svg, .Robot svg{
+    height: 2rem;
+  }
+  .box-link-Products{
+    font-size: 1rem;
+    height: 6rem;
+  }
+
+  .box-link-Products p{
+    display: none;
+  }
+  .How-work__title h3{
+    font-size: 30px;
+  }
+  .How-work__title p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+  /* .How-work__image{
+    width: 26rem;
+    height: 100%;
+  } */
+
+  .work{
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
 }
 @media (max-width:400px){
   .container{
     width: 300px;
+  }
+  .How-work{
+    position: relative;
+  }
+  .wrapper-work{
+    position: absolute;
+    gap: 5rem;
+    margin: 4rem 0;
+  }
+  .How-work__image{
+    background:linear-gradient(rgba(61,61,61,0.6),rgba(61,61,61,0.6)), url(../image/Image\ \(6\).png);
+    width: 35rem;
   }
 }
