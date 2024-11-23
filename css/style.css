@@ -517,6 +517,7 @@ nav {
   display: flex;
     justify-content: space-between;
     align-items: end;
+    flex-wrap: wrap;
 }
 .Customers-top .Customers-top__title h3{
   font-size: 5.7rem;
@@ -775,4 +776,22 @@ nav {
     background:linear-gradient(rgba(61,61,61,0.6),rgba(61,61,61,0.6)), url(../image/Image\ \(6\).png);
     width: 35rem;
   }
+  .Customers-top .Customers-top__title h3{
+    font-size: 2.7rem;
+  }
+  .Customers-top .Customers-top__title p{
+    width: 25rem;
+  }
+  .Customers-top{
+    gap: 5rem;
+  }
+  .Customers-bottom__box{
+    display: none;
+  }
+  .show{
+    display: flex;
+  }
+  .Customers-bottom {
+    margin: 2rem 0;
+}
 }
