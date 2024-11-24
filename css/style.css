@@ -593,6 +593,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 8rem 0;
+  flex-wrap: wrap;
 }
 .conect-me h4{
   margin-bottom: 5rem;
@@ -756,7 +757,7 @@ nav {
   } */
 
   .work{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 1.5rem;
   }
 }
@@ -793,5 +794,23 @@ nav {
   }
   .Customers-bottom {
     margin: 2rem 0;
+}
+.Introduction-technology{
+  padding: 5rem 0;
+}
+.conect-me{
+  gap: 5rem;
+  flex-direction: column-reverse;
+    align-items: start;
+}
+.conect-me h4{
+  margin: 0;
+}
+.Introduction-technology h3{
+  font-size: 4rem;
+}
+.Introduction-technology a{
+  padding: 1.2rem 1rem;
+  font-size: 1.5rem;
 }
 }
