@@ -35,6 +35,10 @@ header {
   border-bottom: 0.1rem solid rgb(36, 36, 36);
   border-top: 1px solid rgb(54, 54, 54);
   margin: 2.5rem 0 0 0;
+  position: sticky;
+    top: 0;
+    background: rgba(245,245,245,0.9);
+    z-index: 100;
 }
 nav {
   height: 7rem;
@@ -344,7 +348,7 @@ nav {
 }
 .content-header__title {
   font-size: 6rem;
-  line-height: 13rem;
+  margin: 5rem 0;
 }
 .content-header__Description {
   text-align: center;
@@ -760,8 +764,6 @@ nav {
     font-size: 2.2rem;
     padding: 1.5rem;
   }
-}
-@media (max-width:400px){
   .container{
     width: 300px;
   }
@@ -812,5 +814,8 @@ nav {
 .Introduction-technology a{
   padding: 1.2rem 1rem;
   font-size: 1.5rem;
+}
+.content-header__Accessible {
+  width: 28rem;
 }
 }
