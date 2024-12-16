@@ -1,5 +1,5 @@
 # Shop selling smart systems
-The store for the sale of smart systems, HTML, CSS and JavaScript
+The store for the sale of smart systems, HTML, CSS 
 
 <b>Website URL:<b/><a href="https://ariabarzegar.github.io/Shop-selling-smart-systems">https://ariabarzegar.github.io/Shop-selling-smart-systems/<a/>
 <h2>Creating a single page site </h2>
